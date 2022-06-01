@@ -10,6 +10,8 @@
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <!-- ANIMATE CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Boom Burger</title>
 </head>
@@ -51,43 +53,149 @@
         </div>
     </section>
 
-    <section>
-            <div class="contact-wrapper animated bounceInUp">
-                <div class="contact-form">
-                    <h3>Contact us</h3>
-                    <form action="">
-                        <p>
-                            <label>FullName</label>
-                            <input type="text" name="fullname">
-                        </p>
-                        <p>
-                            <label>Email Adress</label>
-                            <input type="email" name="email">
-                        </p>
-                        <p>
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone">
-                        </p>
-                        <p>
-                            <label>Affair</label>
-                            <input type="text" name="affair">
-                        </p>
-                        <p class="block">
-                           <label>Message</label> 
-                            <textarea name="message" rows="3"></textarea>
-                        </p>
-                        <p class="block">
-                            <button>
-                                Send
-                            </button>
-                        </p>
-                    </form>
-                </div>
-               
+    <section class="d-flex justify-content-center align-items-center">
+        <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4"> 
+            <div class="mb-4 d-flex justify-content-start align-items-center">
+              
+                <h4>  <i class="bi bi-chat-left-quote"></i> &nbsp; Contacto</h4>
             </div>
-  
-    
+            <div class="mb-1">
+                <form id = "contacto" >
+                    <div class="mb-4 d-flex justify-content-between"> 
+                        <div>
+                            <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Gabriel" required>
+                            <div class="nombre text-danger "></div>
+                        </div>
+                        <div >
+                            <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                            <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Pacheco" required>
+                            <div class="apellido text-danger"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                        <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej: gpmcheco@mail.com" required>
+                        <div class="correo text-danger"></div>
+                        
+                    </div> 
+                    <div class="mb-4">
+                        <label for="sexo"><i class="bi bi-gender-ambiguous"></i> Sexo: </label>
+                        <input type="radio" class="form-check-input"  name="sexo"  value="masculino" > Masculino
+                        <input type="radio" class="form-check-input" name="sexo"  value="femenino" > Femenino
+                        <div class="sexo text-danger"></div>
+                    </div>  
+                    <div class="mb-4">
+                        <label for="mensaje"> <i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" class="form-control" placeholder="ej: hola"></textarea>
+                        <div class="mensaje text-danger"></div>
+                    </div> 
+                    
+                    <div class="mb-2">
+                        <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
+                            <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                        </button>
+                    </div> 
+                              
+                </form>
+            </div>
+        </div>
     </section>
 
+     <!-- footer -->
+   <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-autp mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Boom Burger</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima quibusdam ullam possimus ut delectus fugit magnam? Optio soluta rerum laudantium, qui minus error tempora modi nesciunt accusantium consequuntur distinctio!</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Nuestra Web</h5>
+
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Inicio</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Menu</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Productos</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Nosotros</a>
+                </p>
+
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Contacto</a>
+                </p>
+
+            </div>
+           <!--  <div class="col-md-3 col-lg-2 col-lx-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Texto</h5>
+            </div> -->
+
+            <div class="col-md-4 col-lg-3 col-lx-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                <p>
+                    <i class="fas fa-home mr-3"></i>Corrientes 1035, Bª Independencia.
+                </p>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i>boomburger@gmail.com
+                </p>
+                <p>
+                    <i class="fas fa-phone mr-3"></i>3704-416795
+                </p>
+            </div>
+        </div>
+
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>Copyright 2022 Todos los derechos reservados:
+                    <a href="" style="text-decoration: none;">
+                        <strong class="text-warning">Rodrigo Zanin</strong>
+                    </a>
+                </p>
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item"> 
+                            <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script>
+    const selectElement = function(element) {
+        return document.querySelector(element);
+    }
+
+
+    let menuToggle = selectElement('.menu-toggle');
+    let body = selectElement('body');
+
+    menuToggle.addEventListener('click', function(){
+        body.classList.toggle('open');
+    })
+</script>
 </body>
 </html>

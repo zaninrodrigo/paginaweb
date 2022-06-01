@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="./estilos/estilos.css">
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
    <!--  animacion -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Boom Burger</title>
@@ -158,36 +160,122 @@
         </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-content-about">
-                    <h4>Boom Burger</h4>
-                    <div class="circle">
-                        <i class="fa fa-circle"></i>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-center m-auto">
+                <h2>Testimonios de nuestros clientes</h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Carousel -->
+                    <div class="carousel-inner">
+                        <div class="item carousel-item active">
+                            <div class="img-box"><img src="https://i.ibb.co/d5DY64w/img1.jpg" alt=""></div>
+                            <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                            <p class="overview"><b>Jennifer Smith</b>, Office Worker</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="img-box"><img src="https://i.ibb.co/5FF1vqz/img2.jpg" alt=""></div>
+                            <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+                            <p class="overview"><b>Dauglas McNun</b>, Financial Advisor</p>
+                        </div>
+                        <div class="item carousel-item">
+                            <div class="img-box"><img src="https://i.ibb.co/Trv7hDv/img3.jpg" alt=""></div>
+                            <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                            <p class="overview"><b>Hellen Wright</b>, Athelete</p>
+                        </div>
                     </div>
-                    <p>Hamburguesas de autor, con productos seleccionados de primera calidad.</p>
-                    <p>¡Solo para entendidos!</p>
+                    <!-- Carousel Controls -->
+                    <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 </div>
-                <div class="footer-div">
-                    <div class="social-media">
-                        <h4>Seguinos</h4>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-autp mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Boom Burger</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima quibusdam ullam possimus ut delectus fugit magnam? Optio soluta rerum laudantium, qui minus error tempora modi nesciunt accusantium consequuntur distinctio!</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Nuestra Web</h5>
+
+                    <p>
+                        <a href="" class="text-white" style="text-decoration: none;">Inicio</a>
+                    </p>
+
+                    <p>
+                        <a href="" class="text-white" style="text-decoration: none;">Menu</a>
+                    </p>
+
+                    <p>
+                        <a href="" class="text-white" style="text-decoration: none;">Productos</a>
+                    </p>
+
+                    <p>
+                        <a href="" class="text-white" style="text-decoration: none;">Nosotros</a>
+                    </p>
+
+                    <p>
+                        <a href="" class="text-white" style="text-decoration: none;">Contacto</a>
+                    </p>
+
+                </div>
+               <!--  <div class="col-md-3 col-lg-2 col-lx-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Texto</h5>
+                </div> -->
+
+                <div class="col-md-4 col-lg-3 col-lx-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>Corrientes 1035, Bª Independencia.
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>boomburger@gmail.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>3704-416795
+                    </p>
+                </div>
+            </div>
+
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright 2022 Todos los derechos reservados:
+                        <a href="" style="text-decoration: none;">
+                            <strong class="text-warning">Rodrigo Zanin</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-facebook"></i></a>
                             </li>
-                            <li>
-                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <li class="list-inline-item">
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-instagram"></i></a>
                             </li>
-                            <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <li class="list-inline-item"> 
+                                <a href="" class="btn-floating btn-sm text-white" style="font-size: 26px;"><i class="fab fa-twitter"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
     </footer>
 
     <script>
