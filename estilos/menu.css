@@ -332,6 +332,17 @@ footer{
     border-radius: 50px;
   }
 
+
+  @media screen and (max-width: 750px){
+    .news-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 70px 0;
+        
+      }
+  }
+
   /* MENU */
 
 .taste{
@@ -346,7 +357,29 @@ footer{
 
 }
 
+.taste:hover{
+    background-color: #252525;
+    transition: background-color 2s;
+    color: #fff;
+}
+
 .global{
     text-align: center;
     margin-top: 3.9rem;
+}
+
+/* efecto del texto */
+.heade:before{
+    content: '';
+    animation: changingTxt 4s linear infinite;
+    font-family: 'Gill Sans MT';
+}
+
+@keyframes changingTxt{
+    0% {
+        content: 'Nuestras papas';
+    }
+    20%{
+        content: 'Las mejores del Mundo';
+    }
 }

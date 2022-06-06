@@ -132,6 +132,11 @@ header{
     font-weight: 600;
 }
 
+.logo img{
+    width: 50%;
+   
+}
+
 .nav-item{
     border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
@@ -265,11 +270,18 @@ header{
     background: cover;
 }
 
+.taste:hover {
+    background-color: #252525;
+    transition: background-color 2s;
+    color: #fff;
+}
+
 .bt {
     min-height: 25vh;
     display: flex;
     align-items: center;
 }
+
 
 /* burger */
 
@@ -287,6 +299,12 @@ header{
 .pb{
     background-color: #ffc845;
     background-size: cover;
+}
+
+.pb:hover {
+    background-color: #252525;
+    transition: background-color 2s;
+    color: #fff;
 }
 
 .descripcion{
@@ -529,6 +547,50 @@ header{
         background: #555;		
         box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
     }
+
+    /* icono de wsp */
+    .container-redes{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .container-redes img{
+        width: 60px;
+        padding: 4px;
+        background: rgb(0, 0, 0,0.0);
+        cursor: pointer;
+        border-radius: 100%;
+        transition: all 300ms;
+    }
+
+    .container-redes a:hover img{
+        background: rgba(0, 0, 0, 0.10);
+    }
+
+    /* efecto del texto */
+.heade:before{
+    content: '';
+    animation: changingTxt 4s linear infinite;
+    font-family: 'Gill Sans MT';
+    font-size: 40px;
+    
+}
+
+@keyframes changingTxt{
+    0% {
+        content: 'WE';
+    }
+    20%{
+        content: 'MAKE';
+    }
+    40%{
+        content: 'HAMBURGUERS';
+    }
+    60%{
+        content: '¡¡ WE MAKEHAMBURGUERS !!';
+    }
+}
 
     /* .footer-content{
         max-width: 77.5rem;
